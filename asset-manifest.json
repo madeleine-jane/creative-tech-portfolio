@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/creative-tech-portfolio/static/css/main.9725b09d.css",
-    "main.js": "/creative-tech-portfolio/static/js/main.51fae5af.js",
+    "main.js": "/creative-tech-portfolio/static/js/main.c4f92e6c.js",
     "static/js/453.ad72db31.chunk.js": "/creative-tech-portfolio/static/js/453.ad72db31.chunk.js",
     "index.html": "/creative-tech-portfolio/index.html",
     "main.9725b09d.css.map": "/creative-tech-portfolio/static/css/main.9725b09d.css.map",
-    "main.51fae5af.js.map": "/creative-tech-portfolio/static/js/main.51fae5af.js.map",
+    "main.c4f92e6c.js.map": "/creative-tech-portfolio/static/js/main.c4f92e6c.js.map",
     "453.ad72db31.chunk.js.map": "/creative-tech-portfolio/static/js/453.ad72db31.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9725b09d.css",
-    "static/js/main.51fae5af.js"
+    "static/js/main.c4f92e6c.js"
   ]
 }
