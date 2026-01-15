@@ -18,7 +18,8 @@ function ProjectPage({ projectId, onBackClick }) {
         };
 
         if (projectMap[projectId]) {
-            fetch(projectMap[projectId])
+            const url = `${process.env.PUBLIC_URL}${projectMap[projectId]}`;
+            fetch(url)
                 .then(response => {
                     if (!response.ok) throw new Error('Failed to load');
                     return response.text();
