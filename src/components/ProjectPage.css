@@ -1,0 +1,155 @@
+.project-page {
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.back-button {
+    background: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px 0;
+    border-radius: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 40px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.back-button:hover {
+    transform: translateX(-4px);
+    opacity: 0.7;
+}
+
+.project-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+}
+
+.project-content h1 {
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.project-content h2 {
+    font-size: 2.25rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: none;
+    padding-bottom: 0;
+    font-weight: 300;
+}
+
+.project-content h3 {
+    font-size: 1.75rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.project-content p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    opacity: 1;
+    color: #000000;
+}
+
+.project-content ul,
+.project-content ol {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    padding-left: 24px;
+}
+
+.project-content li {
+    margin-bottom: 8px;
+}
+
+.project-content a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-content a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.project-content code {
+    background: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    color: #d63384;
+}
+
+.project-content pre {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+}
+
+.project-content img {
+    border-radius: 8px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border: 1px solid #e0e0e0;
+}
+
+.project-content video {
+    border-radius: 8px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.error {
+    color: #d32f2f;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .project-page {
+        padding: 20px 15px;
+    }
+
+    .project-content {
+        padding: 0;
+    }
+
+    .project-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .project-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .project-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .project-content p,
+    .project-content ul,
+    .project-content ol {
+        font-size: 0.95rem;
+    }
+}
