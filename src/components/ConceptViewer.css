@@ -1,0 +1,51 @@
+.concept-viewer {
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.concept-viewer .back-button {
+    background: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px 0;
+    border-radius: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 40px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.concept-viewer .back-button:hover {
+    transform: translateX(-4px);
+    opacity: 0.7;
+}
+
+.concept-image-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.concept-image {
+    max-width: 900px;
+    height: auto;
+    border-radius: 2px;
+    border: 5px solid black;
+}
+
+@media (max-width: 768px) {
+    .concept-viewer {
+        padding: 20px 10px;
+    }
+
+    .concept-image-container {
+        margin: 0 auto;
+    }
+}

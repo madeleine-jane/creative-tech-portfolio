@@ -1,48 +1,32 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
 import './ProjectPage.css';
+import TechnologyTinder from '../pages/TechnologyTinder';
+import IDC1Ideation from '../pages/IDC1Ideation';
+import IDC1Project from '../pages/IDC1Project';
+import Enclosures from '../pages/Enclosures';
+import MotorBuffet from '../pages/MotorBuffet';
+import IDC2Ideation from '../pages/IDC2Ideation';
+import IDC2Project from '../pages/IDC2Project';
 
-function ProjectPage({ projectId, onBackClick }) {
-    const [markdown, setMarkdown] = React.useState('');
-    const [error, setError] = React.useState(null);
+function ProjectPage({ projectId, onBackClick, onConceptClick }) {
+    const projectComponents = {
+        'technology-tinder': <TechnologyTinder />,
+        'idc1-ideation': <IDC1Ideation onConceptClick={onConceptClick} />,
+        'idc1-project': <IDC1Project />,
+        'enclosures': <Enclosures />,
+        'motor-buffet': <MotorBuffet />,
+        'idc2-ideation': <IDC2Ideation />,
+        'idc2-project': <IDC2Project />,
+    };
 
-    React.useEffect(() => {
-        const projectMap = {
-            'technology-tinder': '/projects/technology-tinder.md',
-            'idc1-ideation': '/projects/idc1-ideation.md',
-            'idc1-project': '/projects/idc1-project.md',
-            'enclosures': '/projects/enclosures.md',
-            'motor-buffet': '/projects/motor-buffet.md',
-            'idc2-ideation': '/projects/idc2-ideation.md',
-            'idc2-project': '/projects/idc2-project.md',
-        };
-
-        if (projectMap[projectId]) {
-            const url = `${process.env.PUBLIC_URL}${projectMap[projectId]}`;
-            fetch(url)
-                .then(response => {
-                    if (!response.ok) throw new Error('Failed to load');
-                    return response.text();
-                })
-                .then(text => setMarkdown(text))
-                .catch(err => setError('Failed to load project'));
-        } else {
-            setError('Project not found');
-        }
-    }, [projectId]);
+    const component = projectComponents[projectId];
 
     return (
         <div className="project-page">
             <button className="back-button" onClick={onBackClick}>
                 ← Back to Home
             </button>
-            <div className="project-content">
-                {error ? (
-                    <p className="error">{error}</p>
-                ) : (
-                    <ReactMarkdown>{markdown}</ReactMarkdown>
-                )}
-            </div>
+            {component || <p className="error">Project not found</p>}
         </div>
     );
 }

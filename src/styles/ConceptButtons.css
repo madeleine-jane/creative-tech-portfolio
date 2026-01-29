@@ -1,0 +1,51 @@
+.concepts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.concept-card {
+    background: #ffffff;
+    border-radius: 2px;
+    padding: 40px 30px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 200px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.concept-card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px);
+    border-color: #000;
+}
+
+.concept-card h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 300;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    .concepts-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .concept-card {
+        padding: 30px 20px;
+        min-height: auto;
+    }
+}
