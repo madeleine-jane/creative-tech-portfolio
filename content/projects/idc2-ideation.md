@@ -1,14 +1,12 @@
 ---
 title: IDC2 Ideation
-excerpt: Add your excerpt here.
+excerpt: I'm doing IDC1 again but better
 claude: |
-  Instructions for Claude — never rendered on the page.
-  Examples:
-  - "Display the two images after 'Final Picks' side by side."
-  - "The YouTube link at the bottom should use a 16:9 iframe embed."
-  - "Treat the block starting with 'Hot Take:' as a pull-quote, floated right."
+
 ---
 
 # Idc2 Ideation
 
-Add your content here.
+The original IDC1 was cool to look at and barely functional, so I redid it. New specs:
+- It needs to be a single rigid object that can be mounted to a wall. 
+- It needs to have a better sensor enclosure that allows for a demo mode- showing "in" and "out" without requiring the correlated sensor reading. 
