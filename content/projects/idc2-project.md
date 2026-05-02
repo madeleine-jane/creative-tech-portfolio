@@ -9,6 +9,10 @@ claude: |
 
 ![](public/images/idc2_photos/main_photo.jpg)
 
+Version 2 of my IDC 1. Now including a more sturdy build and a nicer sensor enclosure with a rotary switch instead of a rocker switch. 
+
+![](public/images/idc2_photos/enclosure.jpg)
+
 ![](public/images/idc2_photos/mattie-movie-edited.mp4)
 
-She works! I'll have a full writeup soon.
+She works!
